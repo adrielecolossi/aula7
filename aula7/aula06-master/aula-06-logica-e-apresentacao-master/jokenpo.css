@@ -1,0 +1,32 @@
+img{
+    margin-right:20px; /*criamos um espacinho de 20px para a direita*/
+    /*border-radius: 30px;*/ /*para arredondar a imagem*/
+    border-radius: 50%
+}
+
+div{
+    margin-top:20px;
+}
+
+/*todas as imgs com a classe mao que estao dentro da div com id humano*/
+div#humano> img.mao{
+    border: 2px solid plum;
+    box-shadow: none;
+    transition: box-shadow 1s ease;
+}
+
+/*todas as imgs com a classe mao que estao dentro da div com id humano quando o mouse estiver em cima*/
+div#humano > img.mao:hover{
+    box-shadow: 0 0 30px rgb(202, 153, 161);
+    transition: box-shadow 1s ease;
+}
+
+div#humano >img.mao.selecionada{ /*todas as img com a class mao e a class selecionada*/
+    background-color: rgb(243, 234, 243);
+    /*transition: background-color 1s ease-in;*/ /*começa devagar mas termina rapido*/
+    transition: background-color 0.5s ease-in;
+}
+
+div#computador> img.mao{
+    border: 2px solid purple;
+}

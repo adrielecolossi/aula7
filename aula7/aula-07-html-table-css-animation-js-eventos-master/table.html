@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    
+
+<table> 
+ 
+    <tr> <!--TR Table Row--> 
+        <!--É uma linha-->
+         <th> <!--TH = Table Header-->
+              Nome
+         </th> 
+         <th>
+             Personagem favorito
+         </th>
+         <!--Se colocarmos um
+        th a mais, vai ficar uma coluna a mais, vazia-->
+    </tr>
+  <tr>
+      <td> <!-- TD = Table Data-->
+           Thiago
+      </td>
+      <td>
+          Yami Yugi
+      </td>
+  </tr>
+
+  <tr> <!--tr>td*2-->
+      <td>
+          Heric
+      </td>
+      <td>
+          Majora
+      </td>
+  </tr>   
+
+  <tr>
+      <td>
+         Sabrina
+      </td>
+      <td>
+       Sasafadinha
+      </td>
+  </tr>
+   <tr>
+       <td>
+          Marina
+       </td>
+       <td>
+          Marinão
+       </td>
+   </tr>
+</table>
+<br>
+<table>
+    <tr>
+        <th>Dias/Horários</th>
+        <th>13h50 - 14h50</th>
+        <th>14h50 - 15h50</th>
+        <th>16h10 - 17h10</th>
+        <th>17h10 - 18h10</th>
+    </tr>
+    <tr>
+        <th>Segunda-feira</th>
+        <td>Sociologia</td>
+        <td>Filosofia</td>
+        <td colspan="2">Matemática II</td>
+        <!--Como temos dois horários de mat2, queremos que ele ocupe o espaço de 
+        2 td
+          colspan-->
+    </tr>
+    <tr>
+        <th>Terça-feira</th>
+        <td colspan="2">Língua Portuguesa e Literatura Brasileira II</td>
+        <td colspan="2">Física II</td>
+    </tr>
+    <tr>
+        <th>Quarta-feira</th>
+        <td colspan="2">Física II</td>
+        <td colspan="2">Artes</td>
+    </tr>
+    <tr>
+        <th>Quinta-feira</th>
+        <td colspan="4" class="destaque">DBO</td>
+    </tr>
+    <tr>
+        <th>Sexta-feira</th>
+        <td colspan="2">Química</td>
+        <td colspan="2">História</td>
+    </tr>
+</table>
+<br>
+
+<table>
+    <caption>Lista de feira</caption>  <!--Da uma legenda para a tabela-->
+     <thead>  <!--cabeçalho da tabela-->
+         <tr>
+             <th>Item</th>
+             <th>Quantidade</th>
+         </tr>
+     </thead>
+
+     <tbody>
+         <tr>
+             <td> Maçã</td>
+             <td>10</td>
+         </tr>
+         <tr>
+             <td>Pêra</td>
+             <td>5</td>
+         </tr>
+     </tbody>
+     <tfoot> <!--rodapé da tabela-->
+        <tr>
+            <td>Total</td>
+            <td>27</td>
+        </tr>
+
+     </tfoot>
+
+</table>
+
+<script src="eventos.js"></script>
+
+<!--tableless: desde os anos 2000, não é bom que tenha -->
+</body>
+</html>
